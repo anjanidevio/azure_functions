@@ -3,12 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "functionAppName": {
-            "type": "string",
-            "default value": "azurefunctionapp"
+            "type": "string"
         },
         "hostingPlanName": {
-            "type": "string",
-            "defaultValue": "functionappplan"
+            "type": "string"
         }
     },
     "variables": {

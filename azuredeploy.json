@@ -15,7 +15,7 @@
         "functionAppName": "[concat(parameters('functionAppName'), variables('suffix'))]",
         "hostingPlanName": "[parameters('hostingPlanName')]",
         "suffix": "[substring(uniqueString(resourceGroup().id), 0, 5)]",
-        "functionPackageURI1": "https://projectiot.blob.core.windows.net/iotp1/azurefunctionapp.zip"
+        "functionPackageURI1": "https://projectiot.blob.core.windows.net/iotp1/HttpTrigger.zip"
     },
     "resources": [
         {
@@ -76,26 +76,6 @@
                         {
                             "name": "TIME_FREQUENCY_INTERVAL",
                             "value": "60"
-                        },
-                        {
-                            "name": "SERVER",
-                            "value": "[concat('azuresqlfunction','.database.windows.net')]"
-                        },
-                        {
-                            "name": "DATABASE",
-                            "value": "azuredatabase"
-                        },
-                        {
-                            "name": "SQL_USER",
-                            "value": "azuresqluser"
-                        },
-                        {
-                            "name": "SQL_PASSWORD",
-                            "value": "P@ssword@1234"
-                        },
-                        {
-                            "name": "SQL_PORT",
-                            "value": "1433"
                         }
                     ]
                 }
